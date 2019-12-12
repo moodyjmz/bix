@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionSheetController } from '@ionic/angular';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,49 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public actionSheetController: ActionSheetController) {
+  }
 
-  ngOnInit() {}
+  async presentActionSheet() {
+    const actionSheet = await this.actionSheetController.create({
+      translucent: true,
+      header: 'Manage Pigs',
+      buttons: [
+        {
+          text: 'Add pigs',
+          role: 'destructive',
+          icon: 'add',
+          handler: () => {
+            console.log('Add clicked');
+          }
+        },
+        {
+          text: 'Move pigs',
+          icon: 'shuffle',
+          handler: () => {
+            console.log('Move clicked');
+          }
+        },
+        {
+          text: 'Sell pigs',
+          icon: 'basket',
+          handler: () => {
+            console.log('Sell clicked');
+          }
+        },
+        {
+          text: 'Cancel',
+          icon: 'close',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+    await actionSheet.present();
+  }
 
+  ngOnInit() {
+  }
 }
