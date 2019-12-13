@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-card-content>
+    <ng-template [ngIf]="hasMembers">
+
+    <ion-list>
+      <app-team-member [member]="members[0]" [now]="now"></app-team-member>
+      <ng-template [ngIf]="toggled">
+        <ng-template ngFor let-member [ngForOf]="members | slice:1">
+          <app-team-member [class.hide]="!toggle" [member]="member" [now]="now"></app-team-member>
+        </ng-template>
+      </ng-template>
+    </ion-list>
+    <div (click)="toggleMemberList()">toggle</div>
+    </ng-template>
+  </ion-card-content>
+</ion-card>

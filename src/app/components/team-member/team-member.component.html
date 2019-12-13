@@ -1,0 +1,11 @@
+<ion-item lines="none">
+  <ion-thumbnail slot="start" class="avatar">
+    <img class="circle" src="{{member.img}}">
+  </ion-thumbnail>
+  <ion-card-subtitle>{{member.first}} {{member.last}}</ion-card-subtitle>
+  <ion-note i18n="relative date">last check in: {{ member.lastLogin | dfnsFormatDistanceStrict:now }} ago</ion-note>
+  <ion-icon class="comms circle" size="small" icon="text"></ion-icon>
+  <ion-icon class="comms circle" size="small" icon="call"></ion-icon>
+</ion-item>
+
+
