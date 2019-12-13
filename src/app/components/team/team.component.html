@@ -1,7 +1,6 @@
 <ion-card>
   <ion-card-content>
     <ng-template [ngIf]="hasMembers">
-
     <ion-list>
       <app-team-member [member]="members[0]" [now]="now"></app-team-member>
       <ng-template [ngIf]="toggled">
