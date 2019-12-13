@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { retry, map } from 'rxjs/operators';
 import { TeamMember } from '../models/team-member';
+import { MOCK_TEAM } from '../mock-team';
 
 @Injectable({
   providedIn: 'root'
