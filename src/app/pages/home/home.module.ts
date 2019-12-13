@@ -9,21 +9,22 @@ import { HomePage } from './home.page';
 import { TeamComponent } from '../../components/team/team.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { TeamMemberComponent } from '../../components/team-member/team-member.component';
+import { AlertsComponent } from '../../components/alerts/alerts.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RouterModule.forChild([
-      {
-        path: '',
-        component: HomePage
-      }
-    ]),
-    DateFnsModule
-  ],
-  declarations: [HomePage, TeamComponent, HeaderComponent, TeamMemberComponent]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RouterModule.forChild([
+            {
+                path: '',
+                component: HomePage
+            }
+        ]),
+        DateFnsModule
+    ],
+    declarations: [HomePage, TeamComponent, HeaderComponent, TeamMemberComponent, AlertsComponent]
 })
 export class HomePageModule {
 }

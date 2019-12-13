@@ -3,5 +3,6 @@ export class Alert {
     icon: string;
     notify: boolean;
     message: string;
-    time: Date;
+    warning: boolean;
+    date: Date;
 }
