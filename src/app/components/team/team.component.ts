@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamService } from '../../services/team.service';
-import { TeamMember } from '../../models/team-member';
+import { TeamService } from '../../services/team/team.service';
+import { TeamMember } from '../../models/team-member/team-member';
 
 @Component({
   selector: 'app-team',

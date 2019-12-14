@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TeamMember } from '../../models/team-member';
+import { TeamMember } from '../../models/team-member/team-member';
 
 @Component({
   selector: 'app-team-member',
