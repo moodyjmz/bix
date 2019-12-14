@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  teamMembersApi: 'http://localhost:3000/teamMembers',
-  alertsApi: 'http://localhost:3000/alerts'
+  teamMembersApi: 'http://localhost:3000/db'
 };
 
 /*
