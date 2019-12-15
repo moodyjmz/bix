@@ -1,5 +1,6 @@
 ion-card {
   box-shadow: var(--farmera-box-shadow);
+  border-radius: var(--farmera-card-border-radius);
   height: auto;
   transition: max-height 2s linear;
 }

@@ -76,6 +76,9 @@
   --ion-color-light-tint: #f5f6f9;
 
   /** farmera specific **/
+  --farmera-border-radius: 10px;
+  --farmera-button-border-radius: var(--farmera-border-radius);
+  --farmera-card-border-radius: var(--farmera-border-radius);
   --farmera-box-shadow-color: rgba(38, 50, 56, 0.1);
-  --farmera-box-shadow: 0 3px 1px -2px var(--farmera-box-shadow-color), 0 2px 2px 0 var(--farmera-box-shadow-color), 0 1px 5px 0 var(--farmera-box-shadow-color);
+  --farmera-box-shadow: 0 0 10px 0 var(--farmera-box-shadow-color);
 }

@@ -4,4 +4,6 @@
 ion-button {
   text-transform: uppercase;
   letter-spacing: 1px;
+  --border-width: 1px;
+  --border-radius: var(--farmera-border-radius);
 }
