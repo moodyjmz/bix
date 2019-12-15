@@ -1,3 +1,5 @@
+import { DateUtils } from '../../class/date-utils';
+
 export class Alert {
     title: string;
     icon: string;
@@ -12,12 +14,6 @@ export class Alert {
         this.notify = apiObject.notify;
         this.message = apiObject.message;
         this.warning = apiObject.warning;
-        this.date = this.getTwoHoursAgo();
-    }
-
-    getTwoHoursAgo() {
-        const d = new Date();
-        d.setDate(d.getHours() - 2);
-        return d;
+        this.date = DateUtils.getHoursAgo(2);
     }
 }

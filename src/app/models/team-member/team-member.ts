@@ -1,3 +1,5 @@
+import { DateUtils } from '../../class/date-utils';
+
 export class TeamMember {
     first: string;
     last: string;
@@ -12,15 +14,6 @@ export class TeamMember {
         this.img = apiObject.picture.thumbnail;
         this.phone = apiObject.phone;
         this.email = apiObject.email;
-        this.lastLogin = this.generateDate();
+        this.lastLogin = DateUtils.generateDateBeforeNow();
     }
-
-    protected generateDate() {
-        const now = new Date();
-        const max = now.getTime();
-        const min = max - 86400000;
-        return new Date(Math.floor(Math.random() * (max - min) + min));
-    }
-
-
 }
