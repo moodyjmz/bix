@@ -10,6 +10,7 @@ import { TeamComponent } from '../../components/team/team.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { TeamMemberComponent } from '../../components/team-member/team-member.component';
 import { AlertsComponent } from '../../components/alerts/alerts.component';
+import { AlertItemComponent } from '../../components/alert-item/alert-item.component';
 
 @NgModule({
     imports: [
@@ -24,7 +25,7 @@ import { AlertsComponent } from '../../components/alerts/alerts.component';
         ]),
         DateFnsModule
     ],
-    declarations: [HomePage, TeamComponent, HeaderComponent, TeamMemberComponent, AlertsComponent]
+    declarations: [HomePage, TeamComponent, HeaderComponent, TeamMemberComponent, AlertsComponent, AlertItemComponent]
 })
 export class HomePageModule {
 }

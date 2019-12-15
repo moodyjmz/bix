@@ -1,0 +1,6 @@
+<ion-content>
+  <ion-list-header>Alerts ({{alerts.length}})</ion-list-header>
+  <ng-template ngFor let-alert [ngForOf]="alerts">
+    <app-alert-item [alert]="alert"></app-alert-item>
+  </ng-template>
+</ion-content>

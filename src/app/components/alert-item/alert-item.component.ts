@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Alert } from '../../models/alert/alert';
 
 @Component({
   selector: 'app-alert-item',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alert-item.component.scss'],
 })
 export class AlertItemComponent implements OnInit {
-
+  @Input() alert: Alert;
+  @Input() now: Date;
   constructor() { }
 
   ngOnInit() {}
