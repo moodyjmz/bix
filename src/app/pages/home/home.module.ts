@@ -11,6 +11,7 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { TeamMemberComponent } from '../../components/team-member/team-member.component';
 import { AlertsComponent } from '../../components/alerts/alerts.component';
 import { AlertItemComponent } from '../../components/alert-item/alert-item.component';
+import { ListHeaderComponent } from '../../components/list-header/list-header.component';
 
 @NgModule({
     imports: [
@@ -25,7 +26,7 @@ import { AlertItemComponent } from '../../components/alert-item/alert-item.compo
         ]),
         DateFnsModule
     ],
-    declarations: [HomePage, TeamComponent, HeaderComponent, TeamMemberComponent, AlertsComponent, AlertItemComponent]
+    declarations: [HomePage, TeamComponent, HeaderComponent, TeamMemberComponent, AlertsComponent, AlertItemComponent, ListHeaderComponent]
 })
 export class HomePageModule {
 }
