@@ -1,5 +1,7 @@
 {
   "name": "bix",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
