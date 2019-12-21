@@ -1,6 +1,6 @@
 <ion-content>
   <app-list-header id="list-header" text="Alerts ({{alerts.length}})"></app-list-header>
   <ng-template ngFor let-alert [ngForOf]="alerts">
-    <app-alert-item [alert]="alert"></app-alert-item>
+    <app-alert-item [alert]="alert" [now]="now"></app-alert-item>
   </ng-template>
 </ion-content>

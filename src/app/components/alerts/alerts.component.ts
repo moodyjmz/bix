@@ -10,7 +10,11 @@ import { Alert } from '../../models/alert/alert';
 export class AlertsComponent implements OnInit {
 
   alerts: Array<Alert>;
-  constructor(private alertService: AlertService ) { }
+  now: Date;
+
+  constructor(private alertService: AlertService ) {
+    this.now = new Date();
+  }
 
   ngOnInit() {
     this.alertService.getAlerts().subscribe((res) => {
