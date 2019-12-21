@@ -4,7 +4,7 @@ export class DateUtils {
      */
     static getHoursAgo(hours: number) {
         const d = new Date();
-        d.setDate(d.getHours() - hours);
+        d.setHours(d.getHours() - hours);
         return d;
     }
 
