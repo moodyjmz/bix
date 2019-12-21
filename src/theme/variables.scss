@@ -76,6 +76,12 @@
   --ion-color-light-tint: #f5f6f9;
 
   /** farmera specific **/
+  $farmera-green: #cddc39;
+  --farmera-button-cta-background: $farmera-green;
+  --farmera-button-cta-background-activated: darken($farmera-green, 10%);
+  --farmera-button-cta-background-focused: lighten($farmera-green, 10%);
+  --farmera-button-cta-background-hover: lighten($farmera-green, 20%);
+  --farmera-button-cta-padding: 20px;
   --farmera-border-radius: 10px;
   --farmera-button-border-radius: var(--farmera-border-radius);
   --farmera-card-border-radius: var(--farmera-border-radius);
