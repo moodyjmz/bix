@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { retry, map } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { Alert } from '../../models/alert/alert';
@@ -11,7 +10,7 @@ import { MockAlertData } from '../../../../mock-api-data/alerts';
 export class AlertService {
   count = 3;
 
-  constructor(private http: HttpClient) {
+  constructor() {
   }
 
   /**
