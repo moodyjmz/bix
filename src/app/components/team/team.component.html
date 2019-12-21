@@ -2,15 +2,22 @@
 <ion-card>
   <ion-card-content>
     <ng-template [ngIf]="hasMembers">
-    <ion-list>
-      <app-team-member [member]="members[0]" [now]="now"></app-team-member>
-      <ng-template [ngIf]="toggled">
-        <ng-template ngFor let-member [ngForOf]="members | slice:1">
-          <app-team-member [class.hide]="!toggle" [member]="member" [now]="now"></app-team-member>
-        </ng-template>
-      </ng-template>
-    </ion-list>
-    <div (click)="toggleMemberList()">toggle</div>
+      <ion-list>
+        <app-team-member [member]="members[0]" [now]="now"></app-team-member>
+        <!-- only stamp other members into DOM if needed -->
+        <div class="more-members-wrapper">
+          <div class="more-members" [class.collapse]="!toggle">
+            <ng-template [ngIf]="toggled">
+              <ng-template ngFor let-member [ngForOf]="members | slice:1">
+                <app-team-member [member]="member" [now]="now"></app-team-member>
+              </ng-template>
+            </ng-template>
+          </div>
+        </div>
+      </ion-list>
     </ng-template>
   </ion-card-content>
+  <div class="toggle-wrapper">
+    <app-material-icon (click)="toggleMemberList()" [icon]="toggleIcon"></app-material-icon>
+  </div>
 </ion-card>

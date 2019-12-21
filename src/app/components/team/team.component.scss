@@ -1,10 +1,31 @@
 ion-card {
   box-shadow: var(--farmera-box-shadow);
   border-radius: var(--farmera-card-border-radius);
-  height: auto;
-  transition: max-height 2s linear;
 }
 
-.hide {
-  display: none;
+ion-card-content {
+  padding-bottom: 0;
+}
+
+ion-list {
+  padding: 0;
+}
+
+.more-members {
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+  max-height: 1000px;
+  will-change: max-height;
+}
+
+.more-members.collapse {
+  max-height: 0px;
+}
+
+.toggle-wrapper {
+  text-align: center;
+}
+
+.toggle-wrapper app-material-icon {
+  cursor: pointer;
 }
