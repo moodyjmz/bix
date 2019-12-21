@@ -1,4 +1,13 @@
 <div class="header">
-  <ion-button (click)="presentActionSheet()" fill="outline" color="light">Manage Pigs</ion-button>
-  <ion-button><span name="start">ggg</span>Logbook</ion-button>
+  <app-group-meta></app-group-meta>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-left">
+        <ion-button (click)="presentActionSheet()" fill="outline" color="light">Manage Pigs</ion-button>
+      </ion-col>
+      <ion-col class="ion-text-right">
+        <ion-button class="log-book" routerLink="/logbook"><app-material-icon icon="dashboard"></app-material-icon> Logbook</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </div>

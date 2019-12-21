@@ -6,4 +6,16 @@ ion-button {
   letter-spacing: 1px;
   --border-width: 1px;
   --border-radius: var(--farmera-border-radius);
+  --padding-top: var(--farmera-button-cta-padding);
+  --padding-end: var(--farmera-button-cta-padding);
+  --padding-bottom: var(--farmera-button-cta-padding);
+  --padding-start: var(--farmera-button-cta-padding);
 }
+
+.log-book {
+  --background: var(--farmera-button-cta-background);
+  //--background-activated: var(--farmera-button-cta-background-activated);
+  //--background-focused: var(--farmera-button-cta-background-focused);
+  //--background-hover: var(--farmera-button-cta-background-hover);
+}
+

@@ -8,8 +8,9 @@ import { ActionSheetController } from '@ionic/angular';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public actionSheetController: ActionSheetController) {
-  }
+  constructor(
+      private actionSheetController: ActionSheetController
+  ) {}
 
   async presentActionSheet() {
     const actionSheet = await this.actionSheetController.create({
