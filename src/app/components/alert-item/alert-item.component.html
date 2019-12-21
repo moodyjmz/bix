@@ -1,8 +1,29 @@
 <ion-card>
   <ion-card-content>
-    {{alert.title}}
-
+    <ion-grid class="ion-no-padding">
+      <ion-row class="ion-no-padding">
+        <ion-col size="auto" class="ion-no-padding">
+          <app-material-icon icon="invert_colors"></app-material-icon>
+        </ion-col>
+        <ion-col class="ion-align-self-stretch ion-no-padding">
+          <ion-text class="alert-title">{{alert.title}}</ion-text>
+        </ion-col>
+        <ion-col size="auto" class="ion-no-padding">
+          <div class="toggle-wrapper">
+            <app-material-icon class="vibration-icon" icon="vibration"></app-material-icon>
+            <ion-toggle color="success"></ion-toggle>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-no-padding">
+        <ion-col size="8" class="ion-align-self-stretch ion-no-padding">
+          <ion-text class="alert-message" [color]="messageColor"><span>{{alert.message}}</span></ion-text>
+        </ion-col>
+        <ion-col size="auto" class="ion-no-padding">
+          <ion-note class="alert-date">{{ alert.date | dfnsFormatDistanceStrict: now }} ago</ion-note>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-card-content>
 </ion-card>
-
 

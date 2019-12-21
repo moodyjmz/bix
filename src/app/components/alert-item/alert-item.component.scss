@@ -1,5 +1,36 @@
-ion-card{
+ion-card {
   box-shadow: var(--farmera-box-shadow);
   border-radius: var(--farmera-card-border-radius);
+}
+ion-col {
+  padding: 2px;
+}
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+ion-toggle {
+  margin-top: -5px;
+}
+
+.alert-message {
+  display: list-item;
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+.alert-message span {
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.alert-title, .alert-message {
+  font-size: 16px;
+}
+
+.alert-date {
+  vertical-align: -3px;
 }
 
