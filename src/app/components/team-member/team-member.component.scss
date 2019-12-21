@@ -1,13 +1,31 @@
+ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --ion-safe-area-right: 0;
+}
+
 .circle {
   border-radius: 50%;
 }
+
 .avatar{
   height: 41px;
   width: 41px;
 }
+
 .comms {
-  border: 1px solid var(--ion-color-dark);
+  border: 1px solid var(--ion-color-dark-tint);
+  color: var(--ion-color-dark-tint);
   padding: 8px;
   height: 22px;
   width: 22px;
 }
+
+.comms:first-child {
+  margin-right: 10px;
+}
+
+.member-login {
+  font-size: 12px;
+}
+

@@ -7,12 +7,13 @@ import { TeamMember } from '../../models/team-member/team-member';
   styleUrls: ['./team-member.component.scss'],
 })
 export class TeamMemberComponent implements OnInit {
-
   @Input() member: TeamMember;
   @Input() now: Date;
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
 
 }
